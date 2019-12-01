@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/virtual-contacts/static/css/main.0086506a.chunk.css",
+    "main.js": "/virtual-contacts/static/js/main.21550aaf.chunk.js",
+    "main.js.map": "/virtual-contacts/static/js/main.21550aaf.chunk.js.map",
+    "runtime-main.js": "/virtual-contacts/static/js/runtime-main.5411cc63.js",
+    "runtime-main.js.map": "/virtual-contacts/static/js/runtime-main.5411cc63.js.map",
+    "static/css/2.eb45ad44.chunk.css": "/virtual-contacts/static/css/2.eb45ad44.chunk.css",
+    "static/js/2.3b7de7b9.chunk.js": "/virtual-contacts/static/js/2.3b7de7b9.chunk.js",
+    "static/js/2.3b7de7b9.chunk.js.map": "/virtual-contacts/static/js/2.3b7de7b9.chunk.js.map",
+    "index.html": "/virtual-contacts/index.html",
+    "precache-manifest.565426611efb7c64cda8f6fa2c83e666.js": "/virtual-contacts/precache-manifest.565426611efb7c64cda8f6fa2c83e666.js",
+    "service-worker.js": "/virtual-contacts/service-worker.js",
+    "static/css/2.eb45ad44.chunk.css.map": "/virtual-contacts/static/css/2.eb45ad44.chunk.css.map",
+    "static/css/main.0086506a.chunk.css.map": "/virtual-contacts/static/css/main.0086506a.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5411cc63.js",
+    "static/css/2.eb45ad44.chunk.css",
+    "static/js/2.3b7de7b9.chunk.js",
+    "static/css/main.0086506a.chunk.css",
+    "static/js/main.21550aaf.chunk.js"
+  ]
+}
