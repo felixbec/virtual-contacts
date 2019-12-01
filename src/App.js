@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import CardList from './Components/CardList';
 import SearchBox from './Components/SearchBox';
-import {contacts} from './contactData';
+import Scroll from './Components/Scroll';
+//import {contacts} from './contactData';
 
 
 class App extends Component {
     constructor() {
         super()
         this.state = {
-            contacts: contacts,
+            contacts: [],
             searchfield: ''
         }
     }
@@ -16,18 +17,28 @@ class App extends Component {
     onSearchChange = (event) => {
         this.setState({searchfield: event.target.value})
     }
+    
+    componentDidMount() {
+        fetch('https://jsonplaceholder.typicode.com/users')
+            .then(response=> response.json())
+            .then(users => this.setState({contacts: users}));
+    }
 
     render(){
         const filteredContacts = this.state.contacts.filter(contacts => {
             return contacts.name.toLowerCase().includes(this.state.searchfield.toLowerCase());
         })
-        return (
+        return !this.state.contacts.length ?
+            <h1 className="tc">Loading</h1> :
+        (
             <div className="tc">
-                <h1>Contacts</h1>
+                <h1 className="f1">Contacts</h1>
                 <SearchBox searchChange={this.onSearchChange} />
-                <CardList contacts={filteredContacts} />
+                <Scroll>
+                    <CardList contacts={filteredContacts} />
+                </Scroll>
             </div>
-        )
+        );
     }
 }
 
