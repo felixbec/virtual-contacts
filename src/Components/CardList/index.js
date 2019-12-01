@@ -2,6 +2,11 @@ import React from 'react';
 import Card from '../Card';
 
 const CardList = ({ contacts }) => {
+    //USED TO SHOW ERRORS DEVELOPED BY DEVELOPERS USING ERROR BOUNDRIES
+    /*if(true){
+        throw new Error('NOOOOO!');
+        
+    }*/
     //Mapping through all data to return all Users
     const cardArray = contacts.map((user, i) => {
         return (
