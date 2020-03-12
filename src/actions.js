@@ -13,7 +13,7 @@ export const setSearchField = (text) => ({
 export const requestContacts = () => (dispatch) => {
     dispatch({ type: REQUEST_CONTACTS_PENDING});
 
-    fetch('https://jsonplaceholder.typicode.com/users')
+    fetch('https://cors-anywhere.herokuapp.com/https://jsonplaceholder.typicode.com/users')
         .then(response=> response.json())
         .then(data => dispatch({ type: REQUEST_CONTACTS_SUCCESS, payload: data }))
         .catch(error => dispatch({type: REQUEST_CONTACTS_FAILED, payload: error}))
